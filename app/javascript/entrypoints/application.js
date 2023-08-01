@@ -1,13 +1,13 @@
-import { createApp } from 'vue/dist/vue.esm-bundler';
+import { createApp } from 'vue/dist/vue.esm-bundler'
 
-const app = createApp({  
+const app = createApp({
   data() {
-    console.log('here');
+    console.log('here')
     return {
-      course: 'Intro to Vue 3 and Rails'  
-    }  
-  }  
-})  
-  
-app.mount('#app');  
-console.log("app", app);
+      count: 0,
+      dynamicId: 23
+    }
+  }
+})
+
+app.mount('#app')
