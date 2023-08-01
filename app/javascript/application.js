@@ -2,7 +2,14 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 
-import Vue from 'vue'
-import MyComponent from '../components/MyComponent.vue'
-
-Vue.component('my-component', MyComponent)
+const app = createApp({  
+  data() {  
+    return {  
+      course: 'Intro to Vue 3 and Rails'  
+    }  
+  }  
+})  
+  
+app.mount('#app');  
+console.log("app", app);
+console.log('hi');  
